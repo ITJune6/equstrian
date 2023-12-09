@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>About</title>
+
+  <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+  <!-- font awsome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    .welcome {
+      height: max-content;
+      margin: 5rem 0;
+      padding: 0 3rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .photo {
+      /* background-color: #8de5eb; */
+      width: 50%;
+    }
+
+    .photo img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 95%;
+      border-radius: 50%;
+      outline-color: #fddfae;
+      outline-width: 2px;
+      outline-style: solid;
+      outline-offset: 15px;
+    }
+
+    .content {
+      width: 45%;
+      margin-left: 3rem;
+    }
+
+    .content ul {
+      padding-left: 0;
+      list-style-position: inside;
+      margin-bottom: 2rem;
+      line-height: 30px;
+    }
+
+    section {
+      background-color: #FEF5EB;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 6rem 8rem;
+    }
+
+    .square {
+      width: 30rem;
+      height: 20rem;
+      padding: 50px 40px;
+      background-color: #e9a537;
+      text-align: center;
+    }
+
+    .square h1 {
+      font-size: 60px;
+      margin: 0;
+      color: whitesmoke;
+    }
+
+    .square h1#number {
+      font-size: 120px;
+      text-shadow: 5px 2px 0 #cf9943;
+      margin-bottom: 1rem;
+    }
+
+    .content.second {
+      width: 90%;
+    }
+
+
+    /* Medium devices (tablets, 820px and down) */
+    @media (max-width: 820px) {
+      .welcome {
+        padding: 0 0;
+        flex-direction: column;
+        height: max-content;
+      }
+
+      .photo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .photo img {
+        height: 545px;
+        width: 545px;
+      }
+
+      .content {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 3rem;
+      }
+
+      section {
+        padding: 6rem 2rem;
+      }
+
+      .square {
+        width: 15rem;
+      }
+
+      .content.second {
+        margin-left: 1rem;
+        margin-top: 0;
+      }
+
+      .square h1 {
+        font-size: 45px;
+      }
+
+      .square h1#number {
+        font-size: 100px;
+        text-shadow: 5px 2px 0 #cf9943;
+      }
+    }
+
+    /* Small devices (phones, 576px and down) */
+    @media (max-width: 576px) {
+      .photo img {
+        height: 280px;
+        width: 280px;
+      }
+
+      section {
+        flex-direction: column;
+      }
+
+      .square {
+        height: 15rem;
+      }
+
+      .square h1 {
+        font-size: 40px;
+      }
+
+      .content.second {
+        width: 100%;
+        margin-left: 0;
+      }
+
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div id="menuIcon">
+      <i class="fas fa-bars fa-lg"></i>
+    </div>
+    <nav>
+      <img src="./images/Logo_black.png" alt="Logo">
+
+      <ul id="sideNav">
+        <a href="./index.html">
+          <li>Home</li>
+        </a>
+        <a href="./about.html">
+          <li id="active-page">About</li>
+        </a>
+        <a href="./services.html">
+          <li>Services</li>
+        </a>
+        <a href="./instructors.html">
+          <li>Instructors</li>
+        </a>
+        <a href="./contact.html">
+          <li>Contact</li>
+        </a>
+        <a href="./team.html">
+          <li>Team</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECTION -->
+  <section id="banner">
+    <h1>About</h1>
+    <h3>Equestrian Elite // <span> About</span></h3>
+  </section>
+
+  <div class="container">
+    <div class="welcome">
+      <div class="photo">
+        <img src="./images/about.jpeg" alt="">
+      </div>
+      <div class="content">
+        <h3 class="subTitle">// Welcome To Equestrian Elite</h3>
+        <h1 class="title">If You Need Training For Horse Riding.</h1>
+        <p> Our modern and fully equipped equestrian centre is happy to offer everything from polo and show-jumping to horse riding trips across the hills and mountains. Energise your mind, body and soul with a visit to our spacious & accommodating center. At our centre you will acquire new riding skills or simply will have a chance to relax in a good atmosphere.</p>
+
+        <p>The program is taught by experienced staff and caters to all riding abilities, from beginners to advanced.
+        </p>
+
+        <ul>
+          <li>Professional Trainers</li>
+          <li>Healthy and charming horse</li>
+        </ul>
+
+        <a class="btn" href="./services.html">Our Services</a>
+
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="square">
+      <h1 id="number">25 +</h1>
+      <h1>Years Of experience</h1>
+    </div>
+
+    <div class="content second">
+      <h3 class="subTitle">// WORK WITH US</h3>
+      <h1 class="title">Why Choose Us?</h1>
+      <p> At Equestrian Elite, we are passionate about horses and the equestrian lifestyle. We offer a range of services
+        and products to help you and your horse achieve your goals and enjoy the ride.</p>
+
+      <p>We have over 25 years of experience in the Morgan breed, and we are experts in equine training and lessons. We
+        can help you improve your riding skills, learn new disciplines, and prepare for competitions.
+      </p>
+
+      <p>If you are looking for a place where you can pursue your passion for horses, look no further than Equestrian
+        Elite. Contact us today to schedule your first ride and join our equestrian community. We look forward to
+        hearing from you!</p>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>     
+      <div class="social-media">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>© Equestrian Elite 2023 | All Right Reserved</p>
+  </footer>
+
+  <script src="./js/mobileSideNav.js"></script>
+</body>
+
+</html>

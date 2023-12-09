@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Services</title>
+
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <!-- font awsome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <style>
+      .container {
+        padding: 0 5rem;
+      }
+
+      .service {
+        background-color: #fef5eb;
+        width: 25rem;
+        height: 35rem;
+        overflow: hidden;
+      }
+
+      .service .text-logo {
+        height: 18rem;
+        padding: 2rem 2rem 0 2rem;
+      }
+
+      .service .text-logo img {
+        width: 5rem;
+      }
+
+      .service .picture {
+        height: 14rem;
+        margin-top: 1rem;
+      }
+
+      .service .picture img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .service:hover {
+        background-color: #e9a537;
+        transition: all 0.5s ease;
+      }
+
+      .service:hover * {
+        color: whitesmoke;
+      }
+
+      .service:hover .text-logo img {
+        filter: brightness(2);
+      }
+
+      .service:hover .picture img {
+        filter: grayscale(1);
+      }
+
+      /* For (laptop and tablets)*/
+      @media (max-width: 1366px) {
+        .container {
+          padding: 0 2rem;
+        }
+
+        .service {
+          width: 23rem;
+        }
+
+        .service .text-logo {
+          padding: 1rem 1rem 0 1rem;
+        }
+
+        .service .picture {
+          height: 15rem;
+          margin-top: 1rem;
+        }
+
+      }
+
+      /* Small devices (phones, 576px and down) */
+      @media (max-width: 576px) {
+        .container {
+          padding: 0 1rem;
+        }
+
+        .service {
+          width: 22rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div id="menuIcon">
+        <i class="fas fa-bars fa-lg"></i>
+      </div>
+      <nav>
+        <img src="./images/Logo_black.png" alt="Logo" />
+
+        <ul id="sideNav">
+          <a href="./index.html">
+            <li>Home</li>
+          </a>
+          <a href="./about.html">
+            <li>About</li>
+          </a>
+          <a href="./services.html">
+            <li id="active-page">Services</li>
+          </a>
+          <a href="./instructors.html">
+            <li>Instructors</li>
+          </a>
+          <a href="./contact.html">
+            <li>Contact</li>
+          </a>
+          <a href="./team.html">
+            <li>Team</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- SECTION -->
+    <section id="banner">
+      <h1>Services</h1>
+      <h3>Equestrian Elite // <span> Services</span></h3>
+    </section>
+
+    <div class="container">
+      <main>
+        <div id="heading">
+          <h3 class="subTitle">//Our Services</h3>
+          <h1 class="title">We Give Best Horse Care Services</h1>
+        </div>
+        <div class="grid">
+          <!-- Service 1 -->
+          <div class="service">
+            <div class="text-logo">
+              <img src="./images/horse-1.png" alt="" />
+              <h2>Horse Training</h2>
+              <p>
+                We focus on creating a strong foundation for your horse,
+                ensuring they are confident, responsive, and ready for whatever
+                challenge comes their way.
+              </p>
+            </div>
+            <div class="picture">
+              <img src="./images/service-1.jpg" alt="" />
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service">
+            <div class="text-logo">
+              <img src="./images/horse-2.png" alt="" />
+              <h2>Riding Lessons</h2>
+              <p>
+                We offer riding lessons for equestrians of all ages and skill
+                levels. our professional instructors can provide the guidance
+                and support you need.
+              </p>
+            </div>
+            <div class="picture">
+              <img src="./images/service-2.jpg" alt="" />
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service">
+            <div class="text-logo">
+              <img src="./images/horse-3.png" alt="" />
+              <h2>Horse Boarding</h2>
+              <p>
+                We offer safe, comfortable, and caring boarding facilities for
+                your horse. Our stables are equipped with all the amenities your
+                horse needs to feel at home.
+              </p>
+            </div>
+            <div class="picture">
+              <img src="./images/service-3.jpg" alt="" />
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service">
+            <div class="text-logo">
+              <img src="./images/horse-4.png" alt="" />
+              <h2>Horse Grooming</h2>
+              <p>
+                We believe that grooming is not just about maintaining your
+                horse’s appearance, but it’s also an essential part of their
+                overall health and well-being.
+              </p>
+            </div>
+            <div class="picture">
+              <img src="./images/service-4.jpg" alt="" />
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service">
+            <div class="text-logo">
+              <img src="./images/horse-5.png" alt="" />
+              <h2>Equine Therapy</h2>
+              <p>
+                We believe in the therapeutic power of horses. This program
+                promotes physical, occupational, and emotional growth in
+                individuals with a variety of needs.
+              </p>
+            </div>
+            <div class="picture">
+              <img src="./images/service-5.jpg" alt="" />
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service">
+            <div class="text-logo">
+              <img src="./images/horse-6.png" alt="" />
+              <h2>Horse Leasing</h2>
+              <p>
+                Want to experience horse ownership without the long-term
+                commitment?We have a variety of horses available for lease to
+                suit riders of all experience levels.
+              </p>
+            </div>
+            <div class="picture">
+              <img src="./images/service-6.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="social-media">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+      <p>© Equestrian Elite 2023 | All Right Reserved</p>
+    </footer>
+
+    <script src="./js/mobileSideNav.js"></script>
+  </body>
+</html>
